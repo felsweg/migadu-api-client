@@ -237,6 +237,7 @@ impl Migadu {
             .post(uri)
             .body(json_body)
             .basic_auth(self.user(), Some(self.pass()))
+            .header("Content-Type", "application/json")
             .send()
             .await
     }
@@ -256,6 +257,7 @@ impl Migadu {
             .post(uri)
             .body(json_body)
             .basic_auth(self.user(), Some(self.pass()))
+            .header("Content-Type", "application/json")
             .send()
             .await?)
     }
@@ -274,6 +276,7 @@ impl Migadu {
             .post(uri)
             .body(json_body)
             .basic_auth(self.user(), Some(self.pass()))
+            .header("Content-Type", "application/json")
             .send()
             .await
     }
