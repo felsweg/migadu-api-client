@@ -10,5 +10,5 @@ cargo run -- \
         mailboxes create \
         --name "Your fancy mailbox name" \
         --local_part "fancy-mail-name" \
-        --password_method "invidation"
+        --password_method "invitation"
         --password_recovery_email "recovery@email.com"
